@@ -25,3 +25,65 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: WorldModel-Robot
+      description: 机器人具身智能与 world model 相关论文，关注 latent dynamics、预测建模、感知到控制和规划
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: visuomotor policy
+          keyword_cn: ''
+          query: visuomotor policy
+        - keyword: predictive modeling
+          keyword_cn: ''
+          query: predictive modeling
+        - keyword: robot learning
+          keyword_cn: ''
+          query: robot learning
+        - keyword: latent dynamics
+          keyword_cn: ''
+          query: latent dynamics
+        - keyword: embodied intelligence
+          keyword_cn: 具身智能
+          query: embodied intelligence
+        - keyword: world model
+          keyword_cn: 世界模型
+          query: world model
+      intent_queries:
+        - query: visuomotor learning with world model representations
+          query_cn: ''
+          enabled: true
+          source: manual
+          note: ''
+        - query: predictive world models from perception to action
+          query_cn: ''
+          enabled: true
+          source: manual
+          note: ''
+        - query: latent dynamics learning for robot control and planning
+          query_cn: ''
+          enabled: true
+          source: manual
+          note: ''
+        - query: world models for robotics and embodied intelligence
+          query_cn: ''
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-04-01T10:51:30.927Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
