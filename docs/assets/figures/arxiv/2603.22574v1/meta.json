@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2603.22574v1/fig-001.webp",
+      "caption": "Fig. 1. Top. During training, the robot gets task demonstrations (loading a paintbrush) and uses them to infer the user’s high-level intent (“load art supplies”). Bottom. At test time, the robot encounters three unseen objects. GIFT uses the inferred intent to correctly identify that the molding clay is relevant. In contrast, visual-similarity baselines incorrectly prefer the dish scrubber due to its appearance, and language-similarity baselines make an analogous mistake (“toothbrush” and “paintbrush.”)",
+      "page": 1,
+      "index": 1,
+      "width": 512,
+      "height": 615
+    },
+    {
+      "url": "assets/figures/arxiv/2603.22574v1/fig-002.webp",
+      "caption": "Fig. 2. Generalizing Intent for Flexible Test-Time rewards. Left. GIFT infers the human’s intent given pairs of human-preferred demonstrations and reference trajectories. Right. During inference, GIFT deduces which objects in the unseen states should behave as objects in the training states. Afterwards, the unseen state components are aligned to training states so that the reward function learned before deployment can be used for planning.",
+      "page": 2,
+      "index": 2,
+      "width": 744,
+      "height": 308
+    },
+    {
+      "url": "assets/figures/arxiv/2603.22574v1/fig-003.webp",
+      "caption": "Fig. 7. Real World Behavior. By utilizing intent, GIFT planned behavior that was more aligned with the human preferring to pack art supplies and store valuables. The x-axis labels correspond with test trajectories that have the Franka arm store/pack those unseen items. We randomly sampled sets of four trajectories corresponding to the four items and computed the resulting Boltzmann distribution for each induced reward along with the standard error.",
+      "page": 7,
+      "index": 3,
+      "width": 831,
+      "height": 322
+    }
+  ]
+}
