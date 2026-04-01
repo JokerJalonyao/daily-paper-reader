@@ -72,7 +72,7 @@ subscriptions:
           source: manual
           note: ''
       updated_at: '2026-04-01T10:51:30.927Z'
-      paused: true
+      paused: false
     - tag: UAV-Vision
       description: 无人机视觉感知、视觉导航与自主飞行相关论文，侧重可用于机器人与具身智能系统的方法
       enabled: true
